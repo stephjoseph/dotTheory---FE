@@ -4,8 +4,508 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae916347747e71167e21cc_favicon.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f91fae62cc821206588b837_Frame%20246.png"
+      rel="apple-touch-icon"
+    />
     <link rel="stylesheet" href="./style.css" />
-    <title>Discord Clone</title>
+    <title>Discord Blog Clone</title>
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar">
+      <a href=".">
+        <img src="./images/logo.svg" alt="back to home" />
+      </a>
+      <button type="button" class="nav-button">
+        <img
+          class="nav-button__hamburger"
+          src="./images/nav-button.svg"
+          alt=""
+        />
+      </button>
+    </nav>
+    <header class="home-header"></header>
+    <main>
+      <section class="main-blog">
+        <a href="">
+          <img class="main-blog__img" src="./images/main-blog.png" alt="" />
+        </a>
+        <div class="main-blog__title-container">
+          <a href class="collection-title">Product & Features</a>
+          <a href="">
+            <h1 class="main-blog__title">
+              How We’re Improving the Discord Experience for Everyone
+            </h1>
+          </a>
+        </div>
+      </section>
+      <section class="secondary-blogs">
+        <div class="secondary-blogs__blog">
+          <a href="">
+            <img
+              class="secondary-blogs__img"
+              src="./images/secondary-blog-1.png"
+              alt=""
+            />
+          </a>
+          <div class="secondary-blogs__title-container">
+            <a class="collection-title" href="">Policy & Safety</a>
+            <a class="blog-title" href=""
+              >Discord Transparency Report: January - March 2022</a
+            >
+          </div>
+        </div>
+        <div class="secondary-blogs__blog">
+          <a href="">
+            <img
+              class="secondary-blogs__img"
+              src="./images/secondary-blog-2.png"
+              alt=""
+            />
+          </a>
+          <div class="secondary-blogs__title-container">
+            <a class="collection-title" href="">Policy & Safety</a>
+            <a class="blog-title" href=""
+              >Building Better Communities with Discord</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="tertiary-blogs">
+        <div class="tertiary-blogs__blog">
+          <a href="">
+            <img
+              class="tertiary-blogs__img"
+              src="./images/tertiary-blog-1.png"
+              alt=""
+            />
+          </a>
+          <div class="secondary-blogs__title-container">
+            <a class="collection-title" href="">Product & Features</a>
+            <a class="blog-title blog-title--padding-bottom" href=""
+              >Meet Your Newest Community Moderator: AutoMod Is Here
+            </a>
+          </div>
+        </div>
+        <div class="tertiary-blogs__blog">
+          <a href="">
+            <img
+              class="tertiary-blogs__img"
+              src="./images/tertiary-blog-2.png"
+              alt=""
+            />
+          </a>
+          <div class="secondary-blogs__title-container">
+            <a class="collection-title" href="">Product & Features</a>
+            <a class="blog-title blog-title--padding-bottom" href=""
+              >An Update on Tools for Building and Sustaining Communities on
+              Discord</a
+            >
+          </div>
+        </div>
+        <div class="tertiary-blogs__blog">
+          <a href="">
+            <img
+              class="tertiary-blogs__img"
+              src="./images/tertiary-blog-3.png"
+              alt=""
+            />
+          </a>
+          <div class="secondary-blogs__title-container">
+            <a class="collection-title" href="">Community</a>
+            <a class="blog-title blog-title--padding-bottom" href=""
+              >Pride 2022 @ Discord</a
+            >
+          </div>
+        </div>
+        <div class="tertiary-blogs__blog">
+          <a href="">
+            <img
+              class="tertiary-blogs__img"
+              src="./images/tertiary-blog-4.png"
+              alt=""
+            />
+          </a>
+          <div class="secondary-blogs__title-container">
+            <a class="collection-title" href="">Product & Features</a>
+            <a class="blog-title blog-title--padding-bottom" href=""
+              >Sharing Messages in Voice Just Got Way Easier: Introducing Text
+              Chat in Voice Channels
+            </a>
+          </div>
+        </div>
+        <div class="tertiary-blogs__blog">
+          <a href="">
+            <img
+              class="tertiary-blogs__img"
+              src="./images/tertiary-blog-5.png"
+              alt=""
+            />
+          </a>
+          <div class="secondary-blogs__title-container">
+            <a class="collection-title" href="">Discord HQ</a>
+            <a class="blog-title blog-title--padding-bottom" href=""
+              >Idle Nights & Vibrant Lights: Discord’s Newest Merch Line Drops
+              Today</a
+            >
+          </div>
+        </div>
+        <div class="tertiary-blogs__blog">
+          <a href="">
+            <img
+              class="tertiary-blogs__img"
+              src="./images/tertiary-blog-6.png"
+              alt=""
+            />
+          </a>
+          <div class="secondary-blogs__title-container">
+            <a class="collection-title" href="">Products & Features</a>
+            <a class="blog-title blog-title--padding-bottom" href=""
+              >Celebrate Discord’s Bir7hday with Party Mode!</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="collections">
+        <div class="collection">
+          <div class="collection__left-column">
+            <div class="collection__label">Collection</div>
+            <div class="collection__title">Resources & Education</div>
+            <div class="collection__img">
+              <img src="./images/resources-and-education.svg" alt="" />
+            </div>
+            <div class="collection__description">
+              Tutorials and guides to help with Discord and other topics of
+              interest.
+            </div>
+            <a class="collection__button" href="">View Collection</a>
+          </div>
+          <div class="collection__blogs">
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/resources-and-education-blog-1.png"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  How 2-Factor Authentication Helps Keep Your Discord Account
+                  Safe
+                </div>
+              </a>
+            </div>
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/resources-and-education-blog-2.png"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  Discussing Latinx Heritage Month with Discord’s Latinx ERG: La
+                  Cafetería
+                </div>
+              </a>
+            </div>
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/resources-and-education-blog-3.png"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  Ten Tips to Help Your College Club Bloom on Discord
+                </div>
+              </a>
+            </div>
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/resources-and-education-blog-4.png"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  Resources for Celebrating Pride Throughout The Year
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="collection">
+          <div class="collection__left-column">
+            <div class="collection__label">Collection</div>
+            <div class="collection__title">Discord HQ</div>
+            <div class="collection__img">
+              <img src="./images/discord-hq.svg" alt="" />
+            </div>
+            <div class="collection__description">
+              General company updates about what Discord is up to at HQ.
+            </div>
+            <a class="collection__button" href="">View Collection</a>
+          </div>
+          <div class="collection__blogs">
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/discord-hq-blog-1.png"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  Idle Nights & Vibrant Lights: Discord’s Newest Merch Line
+                  Drops Today
+                </div>
+              </a>
+            </div>
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/discord-hq-blog-2.png"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  Sourcery at Discord: The Team Who Finds New Discord Employees
+                </div>
+              </a>
+            </div>
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/discord-hq-blog-3.jpeg"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  Discord Welcomes Elizabeth Hamren as new COO
+                </div>
+              </a>
+            </div>
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/discord-hq-blog-4.png"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  Introducing @everyone and @here Discord Merch — New Store Swag
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="collection">
+          <div class="collection__left-column">
+            <div class="collection__label">Collection</div>
+            <div class="collection__title">Policy & Safety</div>
+            <div class="collection__img">
+              <img src="./images/policy-and-safety.svg" alt="" />
+            </div>
+            <div class="collection__description">
+              General tips and insights from Discord's Policy & Safety teams who
+              enable users and communities to be safe on the platform.
+            </div>
+            <a class="collection__button" href="">View Collection</a>
+          </div>
+          <div class="collection__blogs">
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/policy-and-safety-blog-1.png"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  Discord Transparency Report: January - March 2022
+                </div>
+              </a>
+            </div>
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/policy-and-safety-blog-2.png"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  Our Response to the Tragedy in Buffalo
+                </div>
+              </a>
+            </div>
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/policy-and-safety-blog-3.png"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  Discord Transparency Report: July – December 2021
+                </div>
+              </a>
+            </div>
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/policy-and-safety-blog-4.png"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  Addressing Health Misinformation
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="collection">
+          <div class="collection__left-column">
+            <div class="collection__label">Collection</div>
+            <div class="collection__title">Engineering & Design</div>
+            <div class="collection__img">
+              <img src="./images/engineering-and-design.svg" alt="" />
+            </div>
+            <div class="collection__description">
+              In-depth analysis and thought process on engineering and design
+              challenges.
+            </div>
+            <a class="collection__button" href="">View Collection</a>
+          </div>
+          <div class="collection__blogs">
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/engineering-and-design-blog-1.png"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  How Data Science Informs Strategy & Innovation at Discord
+                </div>
+              </a>
+            </div>
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/engineering-and-design-blog-2.png"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  Why and How Discord Uses Patch to Test Elixir
+                </div>
+              </a>
+            </div>
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/engineering-and-design-blog-3.png"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  How Discord Creates Insights from Trillions of Data Points
+                </div>
+              </a>
+            </div>
+            <div class="collection__blog">
+              <a class="collection__blog-link" href="">
+                <img
+                  class="collection__blog-img"
+                  src="./images/engineering-and-design-blog-4.png"
+                  alt=""
+                />
+                <div class="collection__blog-title">
+                  Building open-source design tools to improve Discord’s design
+                  workflow
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-nav-socials__container">
+        <div class="footer__socials">
+          <h2 class="footer__title">Imagine a place</h2>
+          <div class="footer__social-links">
+            <a class="footer__social-link" href="">
+              <img src="./images/twitter.svg" alt="" />
+            </a>
+            <a class="footer__social-link" href="">
+              <img src="./images/instagram.svg" alt="" />
+            </a>
+            <a class="footer__social-link" href="">
+              <img src="./images/facebook.svg" alt="" />
+            </a>
+            <a class="footer__social-link" href="">
+              <img src="./images/youtube.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-nav__link-group">
+            <ul class="footer-nav__links">
+              <div>Product</div>
+              <li><a href="">Download</a></li>
+              <li><a href="">Why Discord</a></li>
+              <li><a href="">Inspiration</a></li>
+              <li><a href="">College</a></li>
+              <li><a href="">Nitro</a></li>
+              <li><a href="">Status</a></li>
+            </ul>
+            <ul class="footer-nav__links">
+              <div>Company</div>
+              <li><a href="">Download</a></li>
+              <li><a href="">Why Discord</a></li>
+              <li><a href="">Inspiration</a></li>
+              <li><a href="">College</a></li>
+              <li><a href="">Nitro</a></li>
+              <li><a href="">Status</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav__link-group">
+            <ul class="footer-nav__links">
+              <div>Resources</div>
+              <li><a href="">Support</a></li>
+              <li><a href="">Safety</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Feedback</a></li>
+              <li><a href="">Partners</a></li>
+              <li><a href="">Verification</a></li>
+              <li><a href="">Developers</a></li>
+              <li><a href="">StreamKit</a></li>
+              <li><a href="">Open Source</a></li>
+              <li><a href="">Security</a></li>
+              <li><a href="">Moderation</a></li>
+            </ul>
+            <ul class="footer-nav__links">
+              <div>Policies</div>
+              <li><a href="">Terms</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Guidelines</a></li>
+              <li><a href="">Acknowledgments</a></li>
+              <li><a href="">Licenses</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__bar">
+        <a href="">
+          <img src="./images/discord-footer.svg" alt="" />
+        </a>
+        <a class="footer__download-btn" href="">Download</a>
+      </div>
+    </footer>
+  </body>
 </html>
