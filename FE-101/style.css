@@ -707,7 +707,6 @@ template {
 .footer__divider {
   margin: 2.5rem auto;
   width: 90%;
-  max-width: 1080px;
   height: 1px;
   background: #5865f2;
 }
@@ -820,8 +819,10 @@ template {
     margin-top: -21rem;
   }
 
-  footer {
+  .footer {
     padding: 3.125rem;
+    padding-top: 7.5rem;
+    align-items: center;
   }
 
   .navbar {
