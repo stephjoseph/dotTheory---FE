@@ -596,6 +596,14 @@ template {
   gap: 2.5rem;
 }
 
+.collection__blogs-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
 .collection__blog-link {
   display: flex;
   flex-direction: column;
@@ -664,6 +672,12 @@ template {
   left: 0;
 }
 
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
 .footer-nav__link-group {
   display: flex;
   gap: 5.5rem;
@@ -698,7 +712,8 @@ template {
   width: 90%;
   display: flex;
   align-items: center;
-  gap: 3.813rem;
+  justify-content: space-between;
+  align-self: center;
 }
 
 .footer__download-btn {
@@ -709,4 +724,85 @@ template {
   font-weight: 600;
   padding: 0.725rem 1rem;
   border-radius: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-top: -14.063rem;
+    margin-bottom: 6.25rem;
+  }
+
+  .home-header {
+    height: 15rem;
+  }
+
+  .main-blog {
+    gap: 2.5rem;
+    margin-bottom: 7.5rem;
+  }
+
+  .main-blog__title-container {
+    gap: 0.625rem;
+  }
+
+  .main-blog__title {
+    font-size: 4rem;
+    line-height: 3rem;
+  }
+
+  .secondary-blogs {
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .tertiary-blogs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .collection {
+    width: 90%;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4.5rem;
+    padding: 2.5rem;
+  }
+
+  .collection__left-column {
+    width: 30%;
+  }
+
+  .collection__description {
+    font-size: 1.25rem;
+  }
+
+  .collection__blogs {
+    width: 70%;
+  }
+
+  .collection__blogs-container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .collection__blog-title {
+    font-size: 1.25rem;
+  }
+
+  .footer {
+    align-items: flex-start;
+    padding: 6.25rem 2.5rem 3.75rem 2.5rem;
+  }
+
+  .footer__title {
+    width: 15rem;
+  }
+
+  .footer-nav {
+    flex-direction: row;
+    gap: 4rem;
+  }
 }
