@@ -395,6 +395,10 @@ template {
   position: relative;
 }
 
+.nav-links {
+  display: none;
+}
+
 .nav-button {
   background: transparent;
   width: 4.25rem;
@@ -726,6 +730,10 @@ template {
   border-radius: 1.25rem;
 }
 
+.footer__open-discord-btn {
+  display: none;
+}
+
 @media (min-width: 768px) {
   main {
     margin-top: -14.063rem;
@@ -804,5 +812,85 @@ template {
   .footer-nav {
     flex-direction: row;
     gap: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    margin-top: -21rem;
+  }
+
+  footer {
+    padding: 3.125rem;
+  }
+
+  .navbar {
+    padding: 1.563rem 2.5rem;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-link {
+    padding: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .nav-link__collection {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .home-header {
+    height: 24rem;
+  }
+
+  .collection {
+    width: 85%;
+  }
+
+  .collection__title {
+    font-size: 3rem;
+  }
+
+  .footer-nav-socials__container {
+    flex-direction: row;
+    gap: 6rem;
+  }
+
+  .footer__divider {
+    width: 100%;
+    margin: 2.5rem 0;
+  }
+
+  .footer__bar {
+    width: 100%;
+  }
+
+  .footer__download-btn {
+    display: none;
+  }
+
+  .footer__open-discord-btn {
+    display: block;
+    background: #5865f2;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.725rem 1rem;
+    border-radius: 1.25rem;
   }
 }
