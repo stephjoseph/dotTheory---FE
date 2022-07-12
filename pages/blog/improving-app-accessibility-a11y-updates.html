@@ -281,6 +281,20 @@
         </div>
       </div>
       <div class="blog__divider-bar"></div>
+      <div class="comment-box">
+        <h2>Comments</h2>
+        <form class="comment-form">
+          <input type="text" name="name" placeholder="Full Name" required />
+          <textarea
+            name="comment"
+            placeholder="Write a comment.."
+            required
+          ></textarea>
+          <button type="submit">Post Comment</button>
+        </form>
+      </div>
+      <ul class="comments"></ul>
+      <div class="blog__divider-bar"></div>
       <div class="more-from">
         <div class="more-from__title-category-container">
           <div class="more-from__title">More From</div>
@@ -412,5 +426,6 @@
         <a class="footer__open-discord-btn" href="">Open Discord</a>
       </div>
     </footer>
+    <script src="../../scripts/comments.js"></script>
   </body>
 </html>
