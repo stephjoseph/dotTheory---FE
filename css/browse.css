@@ -414,7 +414,7 @@ template {
   height: 1rem;
 }
 
-.home-header {
+.browse-header {
   height: 6.25rem;
   background: var(--primary-color);
 }
