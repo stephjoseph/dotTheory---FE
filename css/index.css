@@ -446,6 +446,7 @@ template {
   .navbar {
     padding: 0rem 2.5rem;
     height: 5rem;
+    z-index: 10;
   }
   .navbar .nav-links {
     gap: 1.25rem;
@@ -470,6 +471,83 @@ template {
     font-weight: 500;
     color: #fff;
     text-align: center;
+  }
+  .navbar .nav-link--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0.5rem;
+  }
+  .navbar .nav-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 1px;
+  }
+  .navbar .nav-link__collection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    gap: 0.5rem;
+  }
+  .navbar .nav-link__collection:hover .nav-link__collection-dropdown,
+.navbar .nav-link__collection:focus .nav-link__collection-dropdown {
+    visibility: visible;
+    opacity: 1;
+  }
+  .navbar .nav-link__collection-dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 14.25rem;
+    position: absolute;
+    top: 3.875rem;
+    gap: 0.625rem;
+    left: 0;
+    padding: 0.625rem 0rem;
+    visibility: hidden;
+    opacity: 0;
+    background: #fff;
+  }
+  .navbar .nav-link__collection-dropdown a {
+    text-align: left;
+    display: block;
+    width: 11.75rem;
+    padding: 0.625rem 1.25rem;
+    font-family: "Work Sans", sans-serif;
+  }
+  .navbar .nav-link__collection-dropdown a:hover {
+    color: #3c49e0;
   }
   .navbar .nav-button {
     display: none;
@@ -618,6 +696,12 @@ template {
   color: white;
 }
 
+.footer-nav__links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+  text-decoration-thickness: 1px;
+}
+
 .footer__divider {
   margin: 2.5rem auto;
   width: 90%;
@@ -652,6 +736,12 @@ template {
   font-weight: 600;
   padding: 0.725rem 1rem;
   border-radius: 1.25rem;
+}
+
+.footer__download-btn:hover {
+  background-color: hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 71.8%);
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .footer__open-discord-btn {
@@ -712,6 +802,11 @@ template {
     font-weight: 600;
     padding: 0.725rem 1rem;
     border-radius: 1.25rem;
+  }
+  .footer__open-discord-btn:hover {
+    background-color: hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 71.8%);
+    -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   }
 }
 /* HEADER STYLES */
@@ -793,9 +888,22 @@ template {
   background: #fff;
   color: #23272a;
 }
+.home-header .download-mac-btn:hover {
+  color: #3c49e0;
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.home-header .download-mac-btn:hover .download-icon {
+  fill: #3c49e0;
+}
 .home-header .open-discord-btn {
   background: #23272a;
   color: #fff;
+}
+.home-header .open-discord-btn:hover {
+  background-color: #36393f;
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* MAIN STYLES */
@@ -922,6 +1030,11 @@ template {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+.CTA a:hover {
+  background-color: hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 71.8%);
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
 .CTA .CTA__container {
   width: 87.2%;
   gap: 2.5rem;
@@ -1043,14 +1156,23 @@ template {
   line-height: 125%;
 }
 
+.blog-title:hover {
+  color: #5865f2;
+}
+
 .blog-title--padding-bottom {
   padding-bottom: 2.5rem;
 }
 
 .main-blog {
   width: 89.33%;
+  max-width: 90rem;
   gap: 1.25rem;
   margin-bottom: 2.5rem;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1093,9 +1215,18 @@ template {
   font-size: 2rem;
   font-weight: 900;
 }
+.main-blog .main-blog__title:hover {
+  color: #5865f2;
+}
+
+.main-blog:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
 
 .secondary-blogs {
   width: 89.33%;
+  max-width: 90rem;
   gap: 3.25rem;
   margin-bottom: 5.75rem;
   display: -webkit-box;
@@ -1115,6 +1246,10 @@ template {
 .secondary-blogs .secondary-blogs__blog {
   width: 100%;
   gap: 1.563rem;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1150,8 +1285,14 @@ template {
           flex-direction: column;
 }
 
+.secondary-blogs__blog:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .tertiary-blogs {
   width: 89.33%;
+  max-width: 90rem;
   margin-bottom: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1170,6 +1311,10 @@ template {
 .tertiary-blogs .tertiary-blogs__blog {
   width: 100%;
   gap: 1.563rem;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1205,6 +1350,11 @@ template {
           flex-direction: column;
 }
 
+.tertiary-blogs__blog:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .collections {
   width: 100%;
   gap: 5rem;
@@ -1225,6 +1375,7 @@ template {
 
 .collection {
   width: 89.33%;
+  max-width: 90rem;
   padding: 2.5rem 1.25rem 5rem 1.25rem;
   background: #f6f6f6;
   border-radius: 0.5rem;
@@ -1301,6 +1452,9 @@ template {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+.collection .collection__button:hover {
+  background-color: #3e4efd;
+}
 .collection .collection__blogs {
   width: 100%;
   gap: 2.5rem;
@@ -1335,6 +1489,16 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.collection .collection__blog {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.collection .collection__blog:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
 .collection .collection__blog-link {
   gap: 1.25rem;
   display: -webkit-box;
@@ -1365,6 +1529,9 @@ template {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+.collection .collection__blog-title:hover {
+  color: #5865f2;
 }
 
 @media (min-width: 768px) {
@@ -1467,6 +1634,7 @@ template {
 
 .blog__header {
   width: 89.33%;
+  max-width: 90rem;
   padding: 0px 0.625rem;
   gap: 1.25rem;
   margin-bottom: 2.5rem;
@@ -1515,6 +1683,7 @@ template {
 
 .blog__author-content-container {
   width: 89.33%;
+  max-width: 90rem;
   gap: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1906,7 +2075,9 @@ template {
           flex-direction: column;
 }
 .more-from__title-category-container .more-from__title {
-  width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   font-family: "Work Sans", sans-serif;
   font-size: 2rem;
   font-weight: 900;
