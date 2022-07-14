@@ -1,0 +1,153 @@
+@import 'variables';
+
+/* FOOTER STYLES */
+
+.footer {
+  background: #23272a;
+  padding: 4rem 1.5rem;
+  @include flex(flex-start, center, column);
+}
+
+.footer-nav-socials__container {
+  gap: 1.125rem;
+  @include flex(flex-start, flex-start, column);
+}
+
+.footer__socials {
+  gap: 6rem;
+  @include flex(flex-start, flex-start, column);
+}
+
+.footer__title {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2.5rem;
+  color: $not-so-blue;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.footer__social-links {
+  @include flex(flex-start, center, row);
+}
+
+.footer__social-link {
+  width: 3rem;
+  height: 2rem;
+  position: relative;
+}
+
+.footer__social-link img {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-nav {
+  gap: 3.5rem;
+  @include flex(flex-start, flex-start, column);
+}
+
+.footer-nav__link-group {
+  display: flex;
+  gap: 5.5rem;
+}
+
+.footer-nav__links {
+  width: 4rem;
+  overflow: visible;
+  gap: 0.5rem;
+  color: $not-so-blue;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  @include flex(flex-start, flex-start, column);
+}
+
+.footer-nav__links a {
+  color: white;
+}
+
+.footer__divider {
+  margin: 2.5rem auto;
+  width: 90%;
+  height: 1px;
+  background: $not-so-blue;
+}
+
+.footer__bar {
+  width: 90%;
+  align-self: center;
+  @include flex(space-between, center, row);
+}
+
+.footer__download-btn {
+  background: $not-so-blue;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.725rem 1rem;
+  border-radius: 1.25rem;
+}
+
+.footer__open-discord-btn {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* FOOTER STYLES */
+  .footer {
+    align-items: flex-start;
+    padding: 6.25rem 2.5rem 3.75rem 2.5rem;
+  }
+
+  .footer__title {
+    width: 15rem;
+  }
+
+  .footer-nav {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  /* FOOTER STYLES */
+  .footer {
+    padding: 3.125rem;
+    padding-top: 7.5rem;
+    align-items: center;
+  }
+
+  .footer-nav-socials__container {
+    flex-direction: row;
+    gap: 6rem;
+  }
+
+  .footer__divider {
+    width: 100%;
+    margin: 2.5rem 0;
+  }
+
+  .footer__bar {
+    width: 100%;
+  }
+
+  .footer__download-btn {
+    display: none;
+  }
+
+  .footer__open-discord-btn {
+    display: block;
+    background: #5865f2;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.725rem 1rem;
+    border-radius: 1.25rem;
+  }
+}
