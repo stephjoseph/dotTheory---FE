@@ -28,14 +28,20 @@
   line-height: 125%;
 }
 
+.blog-title:hover {
+  color: $not-so-blue;
+}
+
 .blog-title--padding-bottom {
   padding-bottom: 2.5rem;
 }
 
 .main-blog {
   width: 89.33%;
+  max-width: 90rem;
   gap: 1.25rem;
   margin-bottom: 2.5rem;
+  transition: transform 0.3s ease-in-out;
   @include flex(flex-start, flex-start, column);
 
   .main-blog__img {
@@ -56,17 +62,28 @@
     font-size: 2rem;
     font-weight: 900;
   }
+
+  .main-blog__title:hover {
+    color: $not-so-blue;
+  }
+}
+
+.main-blog:hover {
+  transform: scale(1.05);
 }
 
 .secondary-blogs {
   width: 89.33%;
+  max-width: 90rem;
   gap: 3.25rem;
   margin-bottom: 5.75rem;
+
   @include flex(flex-start, flex-start, column);
 
   .secondary-blogs__blog {
     width: 100%;
     gap: 1.563rem;
+    transition: transform 0.3s ease-in-out;
     @include flex(flex-start, flex-start, column);
   }
 
@@ -81,14 +98,20 @@
   }
 }
 
+.secondary-blogs__blog:hover {
+  transform: scale(1.05);
+}
+
 .tertiary-blogs {
   width: 89.33%;
+  max-width: 90rem;
   margin-bottom: 5rem;
   @include flex(flex-start, flex-start, column);
 
   .tertiary-blogs__blog {
     width: 100%;
     gap: 1.563rem;
+    transition: transform 0.3s ease-in-out;
     @include flex(flex-start, flex-start, column);
   }
 
@@ -103,6 +126,10 @@
   }
 }
 
+.tertiary-blogs__blog:hover {
+  transform: scale(1.05);
+}
+
 .collections {
   width: 100%;
   gap: 5rem;
@@ -111,6 +138,7 @@
 
 .collection {
   width: 89.33%;
+  max-width: 90rem;
   padding: 2.5rem 1.25rem 5rem 1.25rem;
   background: #f6f6f6;
   border-radius: 0.5rem;
@@ -169,6 +197,10 @@
     @include flex(center, center, row);
   }
 
+  .collection__button:hover {
+    background-color: #3e4efd;
+  }
+
   .collection__blogs {
     width: 100%;
     gap: 2.5rem;
@@ -179,6 +211,14 @@
     width: 100%;
     gap: 2.5rem;
     @include flex(flex-start, center, column);
+  }
+
+  .collection__blog {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .collection__blog:hover {
+    transform: scale(1.05);
   }
 
   .collection__blog-link {
@@ -199,6 +239,10 @@
     overflow: visible;
     color: $not-so-black;
     flex: 1;
+  }
+
+  .collection__blog-title:hover {
+    color: $not-so-blue;
   }
 }
 

@@ -22,6 +22,7 @@
 
 .blog__header {
   width: 89.33%;
+  max-width: 90rem;
   padding: 0px 0.625rem;
   gap: 1.25rem;
   margin-bottom: 2.5rem;
@@ -49,6 +50,7 @@
 
 .blog__author-content-container {
   width: 89.33%;
+  max-width: 90rem;
   gap: 1.5rem;
   @include flex(flex-start, flex-start, column);
 }
@@ -302,7 +304,7 @@
   @include flex(flex-start, flex-start, column);
 
   .more-from__title {
-    width: 100%;
+    width: max-content;
     font-family: 'Work Sans', sans-serif;
     font-size: 2rem;
     font-weight: 900;
