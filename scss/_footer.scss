@@ -69,6 +69,11 @@
 .footer-nav__links a {
   color: white;
 }
+.footer-nav__links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+  text-decoration-thickness: 1px;
+}
 
 .footer__divider {
   margin: 2.5rem auto;
@@ -91,6 +96,11 @@
   font-weight: 600;
   padding: 0.725rem 1rem;
   border-radius: 1.25rem;
+}
+
+.footer__download-btn:hover {
+  background-color: hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 71.8%);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .footer__open-discord-btn {
@@ -149,5 +159,14 @@
     font-weight: 600;
     padding: 0.725rem 1rem;
     border-radius: 1.25rem;
+  }
+
+  .footer__open-discord-btn:hover {
+    background-color: hsl(
+      235,
+      calc(var(--saturation-factor, 1) * 86.1%),
+      71.8%
+    );
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   }
 }

@@ -31,6 +31,10 @@
     @include flex(center, center, row);
   }
 
+  .navbar__login-btn:hover {
+    color: $primary;
+  }
+
   .nav-button {
     background: transparent;
     width: 4.25rem;
@@ -51,6 +55,7 @@
   .navbar {
     padding: 0rem 2.5rem;
     height: 5rem;
+    z-index: 10;
 
     .nav-links {
       gap: 1.25rem;
@@ -64,6 +69,54 @@
       font-weight: 500;
       color: #fff;
       text-align: center;
+    }
+
+    .nav-link--flex {
+      @include flex(flex-start, center, row);
+      gap: 0.5rem;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 0.25rem;
+      text-decoration-thickness: 1px;
+    }
+
+    .nav-link__collection {
+      @include flex(flex-start, center, column);
+      position: relative;
+      gap: 0.5rem;
+    }
+
+    .nav-link__collection:hover,
+    .nav-link__collection:focus {
+      .nav-link__collection-dropdown {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    .nav-link__collection-dropdown {
+      @include flex(flex-start, flex-start, column);
+      width: 14.25rem;
+      position: absolute;
+      top: 3.875rem;
+      gap: 0.625rem;
+      left: 0;
+      padding: 0.625rem 0rem;
+      visibility: hidden;
+      opacity: 0;
+      background: #fff;
+
+      a {
+        text-align: left;
+        display: block;
+        width: 11.75rem;
+        padding: 0.625rem 1.25rem;
+        font-family: 'Work Sans', sans-serif;
+      }
+      a:hover {
+        color: $primary;
+      }
     }
 
     .nav-button {

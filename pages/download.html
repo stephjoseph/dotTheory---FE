@@ -13,12 +13,11 @@
       href="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f91fae62cc821206588b837_Frame%20246.png"
       rel="apple-touch-icon"
     />
-    
+    <link rel="stylesheet" href="../css/index.css" />
     <title>Discord | Your Place to Talk and Hang Out</title>
-    <link rel="stylesheet" href="/assets/index.a39ac418.css">
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar navbar--download">
       <a class="navbar__home-btn" href="/" aria-label="home">
         <svg width="124" height="34" viewBox="0 0 124 34" class="logo-3oeRIY">
           <g fill="#fff">
@@ -53,7 +52,7 @@
         </svg>
       </a>
       <div class="nav-links">
-        <a class="nav-link" href="./pages/download.html">Download</a>
+        <a class="nav-link" href="/">Download</a>
         <a class="nav-link" href="/">Nitro</a>
         <a class="nav-link" href="/">Safety</a>
         <a class="nav-link" href="/">Support</a>
@@ -65,124 +64,24 @@
         <button type="button" class="nav-button">
           <img
             class="nav-button__hamburger"
-            src="/assets/nav-button.121239d3.svg"
+            src="../images/nav-button.svg"
             alt=""
           />
         </button>
       </div>
     </nav>
-    <header class="home-header">
-      <div class="home-header__heading-container">
-        <h1 class="home-header__heading">Imagine a place...</h1>
-        <div class="home-header__text">
-          ...where you can belong to a school club, a gaming group, or a
-          worldwide art community. Where just you and a handful of friends can
-          spend time together. A place that makes it easy to talk every day and
-          hang out more often.
+    <header class="download-header">
+      <div class="download-header__left-col">
+        <div class="download-header__heading-container">
+          <h1>Get Discord for any device</h1>
+          <p>
+            An adventure awaits. Hang out with your friends on our desktop app
+            and keep the conversation going on mobile.
+          </p>
         </div>
-        <a class="home-header__btn download-mac-btn" href="/"
-          ><svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            class="icon-2tQ9Jt"
-            data-selected="true"
-            data-label-id="0"
-          >
-            <g class="download-icon" fill="#23272a">
-              <path
-                d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"
-              ></path>
-              <path
-                d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"
-              ></path>
-            </g>
-          </svg>
-          Download for Mac</a
-        >
-        <a class="home-header__btn open-discord-btn" href="/"
-          >Open Discord in your browser</a
-        >
-      </div>
-    </header>
-    <main>
-      <div class="feature">
-        <div class="feature__container">
-          <div class="feature__img-container">
-            <img
-              class="feature__img"
-              src="/assets/create-an-invite-only.61ea1a13.svg"
-              alt=""
-            />
-          </div>
-          <div class="feature__details-container">
-            <h2>Create an invite-only place where you belong</h2>
-            <p>
-              Discord servers are organized into topic-based channels where you
-              can collaborate, share, and just talk about your day without
-              clogging up a group chat.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="feature feature--grey-bg">
-        <div class="feature__container feature--row-reverse">
-          <div class="feature__img-container">
-            <img
-              class="feature__img"
-              src="/assets/hanging-out-is-easy.ab680751.svg"
-              alt=""
-            />
-          </div>
-          <div class="feature__details-container">
-            <h2>Where hanging out is easy</h2>
-            <p>
-              Grab a seat in a voice channel when you’re free. Friends in your
-              server can see you’re around and instantly pop in to talk without
-              having to call.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="feature__container">
-          <div class="feature__img-container">
-            <img
-              class="feature__img"
-              src="/assets/few-to-a-fandom.408e1136.svg"
-              alt=""
-            />
-          </div>
-          <div class="feature__details-container">
-            <h2>From few to a fandom</h2>
-            <p>
-              Get any community running with moderation tools and custom member
-              access. Give members special powers, set up private channels, and
-              more.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="feature feature--grey-bg feature__reliable-tech">
-        <div class="feature__container feature__reliable-tech-container">
-          <div class="feature__details-container">
-            <h2>Reliable tech for staying close</h2>
-            <p>
-              Grab a seat in a voice channel when you’re free. Friends in your
-              server can see you’re around and instantly pop in to talk without
-              having to call.
-            </p>
-          </div>
-          <div class="feature__img-container">
-            <img class="feature__img" src="/assets/reliable-tech.0455dc9d.svg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="CTA">
-        <div class="CTA__container">
-          <h2>Ready to start your journey?</h2>
-          <a class="" href="/"
-            ><svg
+        <div class="download-header__download-btn-container">
+          <a href="/">
+            <svg
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -190,7 +89,7 @@
               data-selected="true"
               data-label-id="0"
             >
-              <g fill="#fff">
+              <g class="download-icon" fill="#fff">
                 <path
                   d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"
                 ></path>
@@ -201,6 +100,78 @@
             </svg>
             Download for Mac</a
           >
+          <div class="home-header__download-label">
+            macOS 10.11 (El Capitan) or higher
+          </div>
+        </div>
+      </div>
+      <div class="download-header__img-container">
+        <img
+          class="download-header__img"
+          src="../images/download-header-img.svg"
+          alt=""
+        />
+      </div>
+    </header>
+    <main class="download-main">
+      <div class="operating-systems">
+        <div class="operating-systems__os operating-systems__ios os-img--phone">
+          <div class="operating-systems__os-btn-container">
+            <h2>iOS</h2>
+            <a href="/">Download</a>
+          </div>
+          <img
+            class="operating-systems__os-img"
+            src="../images/iOS.svg"
+            alt=""
+          />
+        </div>
+        <div
+          class="operating-systems__os operating-systems__android os-img--phone"
+        >
+          <div class="operating-systems__os-btn-container">
+            <h2>Android</h2>
+            <a href="/">Download</a>
+          </div>
+          <img
+            class="operating-systems__os-img"
+            src="../images/android.svg"
+            alt=""
+          />
+        </div>
+        <div class="operating-systems__os operating-systems__linux os-img--pc">
+          <div class="operating-systems__os-btn-container">
+            <h2>Linux</h2>
+            <a href="/">Download</a>
+          </div>
+          <img
+            class="operating-systems__os-img"
+            src="../images/linux.svg"
+            alt=""
+          />
+        </div>
+        <div
+          class="operating-systems__os operating-systems__windows os-img--pc"
+        >
+          <div class="operating-systems__os-btn-container">
+            <h2>Windows</h2>
+            <a href="/">Download</a>
+          </div>
+          <img
+            class="operating-systems__os-img"
+            src="../images/windows.svg"
+            alt=""
+          />
+        </div>
+        <div class="operating-systems__experimental">
+          <h2>Feeling experimental?</h2>
+          <p>
+            Try our Public Test Build and test new features before they launch
+          </p>
+          <a href="/"
+            >Download Public Text Build
+            <img src="../images/arrow-down.svg" alt=""
+          /></a>
         </div>
       </div>
     </main>
