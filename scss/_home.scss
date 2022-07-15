@@ -46,10 +46,23 @@
     background: #fff;
     color: $not-so-black;
   }
+  .download-mac-btn:hover {
+    color: $primary;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+
+    .download-icon {
+      fill: $primary;
+    }
+  }
 
   .open-discord-btn {
     background: $not-so-black;
     color: #fff;
+  }
+
+  .open-discord-btn:hover {
+    background-color: #36393f;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -123,6 +136,15 @@
     color: #fff;
     font-weight: 500;
     @include flex(center, center, row);
+  }
+
+  a:hover {
+    background-color: hsl(
+      235,
+      calc(var(--saturation-factor, 1) * 86.1%),
+      71.8%
+    );
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   }
 
   .CTA__container {
