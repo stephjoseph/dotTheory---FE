@@ -55,6 +55,11 @@
     @include flex(center, center, row);
   }
 
+  a:hover {
+    background: hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 71.8%);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
   .home-header__download-label {
     color: #fff;
     font-size: 0.875rem;
@@ -114,6 +119,10 @@
     line-height: 1.5rem;
     font-weight: 500;
     @include flex(center, center, row);
+  }
+
+  a:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   }
 
   .operating-systems__os-img {

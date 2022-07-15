@@ -31,6 +31,10 @@
     @include flex(center, center, row);
   }
 
+  .navbar__login-btn:hover {
+    color: $primary;
+  }
+
   .nav-button {
     background: transparent;
     width: 4.25rem;

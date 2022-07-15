@@ -429,6 +429,9 @@ template {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+.navbar .navbar__login-btn:hover {
+  color: #3c49e0;
+}
 .navbar .nav-button {
   background: transparent;
   width: 4.25rem;
@@ -2579,6 +2582,11 @@ template {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+.download-header a:hover {
+  background: hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 71.8%);
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
 .download-header .home-header__download-label {
   color: #fff;
   font-size: 0.875rem;
@@ -2667,6 +2675,10 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+.operating-systems a:hover {
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 .operating-systems .operating-systems__os-img {
   width: 215px;
