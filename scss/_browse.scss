@@ -6,13 +6,13 @@
 
 .browse-header {
   height: 6.25rem;
-  background: $primary;
+  background: var(--primary-color);
 }
 
 // MAIN STYLES
 
 .collection-title {
-  color: $not-so-blue;
+  color: var(--not-so-blue);
   font-family: 'Domine', sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
@@ -20,7 +20,7 @@
 }
 
 .blog-title {
-  color: $not-so-black;
+  color: var(--not-so-black);
   font-family: 'Work Sans', sans-serif;
   font-size: 1.5rem;
   font-weight: 900;
@@ -29,7 +29,7 @@
 }
 
 .blog-title:hover {
-  color: $not-so-blue;
+  color: var(--not-so-blue);
 }
 
 .blog-title--padding-bottom {
@@ -55,7 +55,7 @@
   }
 
   .main-blog__title {
-    color: $not-so-black;
+    color: var(--not-so-black);
     text-transform: uppercase;
     font-family: 'Work Sans', sans-serif;
     line-height: 100%;
@@ -64,7 +64,7 @@
   }
 
   .main-blog__title:hover {
-    color: $not-so-blue;
+    color: var(--not-so-blue);
   }
 }
 
@@ -163,7 +163,7 @@
   .collection__title {
     overflow: visible;
     font-family: 'Work Sans', sans-serif;
-    color: $not-so-blue;
+    color: var(--not-so-blue);
     font-size: 1.875rem;
     line-height: 100%;
     font-weight: 900;
@@ -185,7 +185,7 @@
   .collection__button {
     width: 100%;
     padding: 1rem 0rem;
-    background: $not-so-blue;
+    background: var(--not-so-blue);
     border-radius: 1.75rem;
     font-family: 'Work Sans', sans-serif;
     color: #fff;
@@ -237,12 +237,12 @@
     line-height: 125%;
     font-weight: 600;
     overflow: visible;
-    color: $not-so-black;
+    color: var(--not-so-black);
     flex: 1;
   }
 
   .collection__blog-title:hover {
-    color: $not-so-blue;
+    color: var(--not-so-blue);
   }
 }
 

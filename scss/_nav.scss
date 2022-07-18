@@ -3,7 +3,7 @@
 /* NAV STYLES */
 
 .navbar {
-  background: $primary;
+  background: var(--primary-color);
   padding: 0rem 0rem 0rem 1.5rem;
   position: relative;
   @include flex(space-between, center, row);
@@ -32,7 +32,7 @@
   }
 
   .navbar__login-btn:hover {
-    color: $primary;
+    color: var(--primary-color);
   }
 
   .nav-button {
@@ -115,7 +115,7 @@
         font-family: 'Work Sans', sans-serif;
       }
       a:hover {
-        color: $primary;
+        color: var(--primary-color);
       }
     }
 
