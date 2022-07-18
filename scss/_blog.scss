@@ -2,7 +2,7 @@
 
 .blog-header {
   height: 6.25rem;
-  background: $primary;
+  background: var(--primary-color);
 }
 
 /* MAIN STYLES */
@@ -13,7 +13,7 @@
 }
 
 .collection-title {
-  color: $not-so-blue;
+  color: var(--not-so-blue);
   font-family: 'Domine', sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
@@ -22,6 +22,7 @@
 
 .blog__header {
   width: 89.33%;
+  max-width: 90rem;
   padding: 0px 0.625rem;
   gap: 1.25rem;
   margin-bottom: 2.5rem;
@@ -49,6 +50,7 @@
 
 .blog__author-content-container {
   width: 89.33%;
+  max-width: 90rem;
   gap: 1.5rem;
   @include flex(flex-start, flex-start, column);
 }
@@ -122,7 +124,7 @@
   a.blog__btn {
     padding: 0.625rem 2.188rem;
     border: none;
-    background: $not-so-blue;
+    background: var(--not-so-blue);
     border-radius: 50px;
     color: #fff;
     font-size: 1rem;
@@ -302,7 +304,7 @@
   @include flex(flex-start, flex-start, column);
 
   .more-from__title {
-    width: 100%;
+    width: max-content;
     font-family: 'Work Sans', sans-serif;
     font-size: 2rem;
     font-weight: 900;
@@ -341,7 +343,7 @@
 .more-from__blog-category {
   display: block;
   overflow: visible;
-  color: $not-so-blue;
+  color: var(--not-so-blue);
   font-family: 'Work Sans', sans-serif;
   font-size: 1.5rem;
   line-height: 125%;
@@ -354,7 +356,7 @@
 .more-from__blog-title {
   display: block;
   overflow: visible;
-  color: $not-so-black;
+  color: var(--not-so-black);
   font-family: 'Work Sans', sans-serif;
   font-size: 1.75rem;
   line-height: 125%;

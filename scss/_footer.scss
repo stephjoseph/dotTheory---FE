@@ -21,7 +21,7 @@
 .footer__title {
   font-family: 'Work Sans', sans-serif;
   font-size: 2.5rem;
-  color: $not-so-blue;
+  color: var(--not-so-blue);
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -58,7 +58,7 @@
   width: 4rem;
   overflow: visible;
   gap: 0.5rem;
-  color: $not-so-blue;
+  color: var(--not-so-blue);
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -69,12 +69,17 @@
 .footer-nav__links a {
   color: white;
 }
+.footer-nav__links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+  text-decoration-thickness: 1px;
+}
 
 .footer__divider {
   margin: 2.5rem auto;
   width: 90%;
   height: 1px;
-  background: $not-so-blue;
+  background: var(--not-so-blue);
 }
 
 .footer__bar {
@@ -84,13 +89,18 @@
 }
 
 .footer__download-btn {
-  background: $not-so-blue;
+  background: var(--not-so-blue);
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
   padding: 0.725rem 1rem;
   border-radius: 1.25rem;
+}
+
+.footer__download-btn:hover {
+  background-color: hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 71.8%);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .footer__open-discord-btn {
@@ -149,5 +159,14 @@
     font-weight: 600;
     padding: 0.725rem 1rem;
     border-radius: 1.25rem;
+  }
+
+  .footer__open-discord-btn:hover {
+    background-color: hsl(
+      235,
+      calc(var(--saturation-factor, 1) * 86.1%),
+      71.8%
+    );
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   }
 }
